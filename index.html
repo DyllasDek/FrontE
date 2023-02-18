@@ -1,23 +1,101 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Lab 1</title>
-  </head>
-  <body>
-    <label for="fahrenheit">Degrees Fahrenheit</label>
-    <input type="number" id="fahrenheit" />
+<!doctype html>
+<html lang="en">
 
-    <p>Degrees Celcsuis:</p>
-    <div id="out"></div>
-    <button onclick="conv()">Convert</button>
-    <script>
-        const fah = document.getElementById('fahrenheit');
-        function conv(){
-            let output = (parseFloat(fah.value) - 32) * (5/9);
-            document.getElementById('out').innerText =  output;
-            console.log(output);
-        }
-        
-    </script>
-  </body>
+<head>
+    <title>Danila Korneenko</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="maincont">
+        <nav class="sidenav">
+            <div style="text-align: center;">
+                <!--<div style="background-image: url(images/logo.jpg);"></div>-->
+                <h3 style="background-color: rgba(50,55,65,0.65); ">Danila Korneenko</h3>
+            </div>
+            <ul class="list-unstyled components mb-5">
+                <li>
+                    <a href="#about"><span class="fa fa-folder-open mr-3"></span> About me</a>
+                </li>
+                <li>
+                    <a href="#edu"><span class="fa fa-mortar-board mr-3"></span>Education</a>
+                </li>
+                <li>
+                    <a href="#port"><span class="fa fa-trophy mr-3"></span> Portfolio</a>
+                </li>
+                <li>
+                    <a href="#cont"><span class="fa fa-telegram mr-3"></span> Contact</a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <!-- Page Content  -->
+        <div class="main maincont">
+            <section class="childcont" id="about">
+                <div class="info" >
+                    <h1>About me</h1>
+                    <p>
+                        Hi! My name is <b>Danila Korneenko </b>, I am a junior C++ developer.
+                    </p>
+                    <p>
+                        I was participating in Trinity Core project, and I have experience in C++ and MySQL.
+                     </p>
+                </div>
+            </section>
+            <section class="childcont" id="edu">
+                <div class="info">
+                    <h1>Education</h1>
+                    <p> Currently studying at Innopolis University as  <b>Computer Science and Engineering</b> student. 
+                        Enrolled in Software Development track.
+                    </p>
+                </div>
+            </section>
+            <section class="childcont" id="port">
+                <div class="info">
+                    <h1>Portfolio</h1>
+                    <div class="skill_wrapper highlight_">
+                        <span>C++</span>
+                        <span>CI/CD</span>
+                        <span>Git</span>
+                        <span>Cmake</span>
+                        <span>GCC</span>
+                    </div>
+                    <div class="port-proj">
+                        <div>
+                          <p> 
+                            Have some experience in
+                          </p>
+                        </div>
+                        <div>
+                          <ul>
+                            <li><a href="https://gist.github.com/DyllasDek/d9b793d31ac134d92759240542245beb">Building TrinityCore Server</a></li>
+                            <li> <a href="https://github.com/relisqu/CompilerConstruction">Compiler Construction</a></li>
+                            <li> <a href="https://github.com/DyllasDek/DNP6">RAFT protocol</a></li>
+                          </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="childcont" id="cont">
+                <div class="info">
+                <h1>Contact</h1>
+                    <div id="contact">
+                        <a href="https://github.com/DyllasDek" id="gh-link"><span class="fa fa-github mr-2"></span> My github</a>
+                        <a href="mailto:d.korneenko@innopolis.university" id="email"><span class="fa fa-envelope mr-2"></span> My email</a>
+                        <a href="t.me/DyllasDek" id="tg-link"><span class="fa fa-telegram mr-2"></span> My telegram</a>    
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+    </div>
+</body>
+<script src="scripts/script.js"></script>
 </html>
