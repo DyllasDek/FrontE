@@ -4,8 +4,6 @@ async function fetchComicID(email) {
         params.append('email', email,true);
     }
 
-
-    let xhr = new XMLHttpRequest(); 
     let url ='https://fwd.innopolis.app/api/hw2?' + params.toString()
     let resp = await fetch(url, {
         mode: 'cors',
