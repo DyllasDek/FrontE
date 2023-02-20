@@ -18,17 +18,26 @@ async function requestSite(id) {
     url = "https://getxkcd.vercel.app/api/comic?num="+id
     let resp = await fetch(url).then(r =>r.json());
     console.log(resp)
-    let output = document.createElement("div")
+    let output = document.getElementById("comic")
     let date = new Date(parseInt(resp.year),parseInt(resp.month)-1,parseInt(resp.day));
     let dat = date.toLocaleDateString('ru-RU');
-  
+
+
+    let img = document.createElement("img")
+    let img_src = document.createAttribute('src')
+    let img_alt = document.createAttribute('alt')
+    img_src.value = resp.img
+    img_alt.value = resp.alt
+    img.setAttributeNode(img_src)
+    img.setAttributeNode(img_alt)
     
-    output.innerHTML = 
-    '<img src='+resp.img+' alt='+resp.alt+'>\n\
-     <p>'+dat+'<p>                          \n\
-    ';
     
-    let out = document.getElementById("comic")
-    out.appendChild(output)
+    let p = document.createElement('p')
+    p.appendChild(document.createTextNode(dat))
+
+    output.appendChild(img)
+
+    output.appendChild(p)
+
 }
 fetchComicID("d.korneenko@innopolis.university").then(t => requestSite(t))
