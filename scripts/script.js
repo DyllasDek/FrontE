@@ -17,13 +17,8 @@ async function fetchComicID(email) {
 }
 
 async function requestSite(id) {
-    url = "https://cors-anywhere.herokuapp.com/https://xkcd.com/"+id+"/info.0.json"
-    let resp = await fetch(url, {
-        mode: 'cors',
-        headers: {
-          'Access-Control-Allow-Origin':'*'
-        }
-      }).then(r =>r.json());
+    url = "https://getxkcd.vercel.app/api/comic?num="+id
+    let resp = await fetch(url).then(r =>r.json());
     console.log(resp)
     let output = document.createElement("div")
     let date = new Date(parseInt(resp.year),parseInt(resp.month)-1,parseInt(resp.day));
@@ -32,7 +27,7 @@ async function requestSite(id) {
     
     output.innerHTML = 
     '<img src='+resp.img+' alt='+resp.alt+'>\n\
-     <h3>'+dat+'</h3>                       \n\
+     <p>'+dat+'<p>                          \n\
     ';
     
     let out = document.getElementById("comic")
