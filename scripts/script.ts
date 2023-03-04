@@ -3,7 +3,6 @@ async function fetchComicID(email: string) : Promise<string> {
     if (email) {
         params.append('email', email);
     }
-
     let url : string ='https://fwd.innopolis.app/api/hw2?' + params.toString()
     let resp : string = await fetch(url, {
         mode: 'cors',
