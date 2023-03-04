@@ -10,7 +10,7 @@ async function fetchComicID(email: string) : Promise<string> {
         headers: {
           'Access-Control-Allow-Origin':'*'
         }
-      }).then(r =>r.toString());
+      }).then(r =>r.json());
     return resp
 }
 
