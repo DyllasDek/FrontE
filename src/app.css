@@ -90,6 +90,11 @@ body {
     flex-direction: column;
 
 }
+#comic img {
+    max-width: 1000px;
+    max-height: 1000px;
+    align-self: center;
+}
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidenav {
