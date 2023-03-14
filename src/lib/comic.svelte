@@ -18,11 +18,19 @@
   let img_src : string;
   let img_alt : string;
   let title : string;
+  interface Joke {
+    alt: string;
+    day: string;
+    month: string;
+    year: string;
+    img: string;
+    title: string;
+  }
 
   async function requestSite(nick: string) {
-    let id = await fetchComicID(nick)
+    let id : string = await fetchComicID(nick)
     let url : string = "https://getxkcd.vercel.app/api/comic?num="+id
-    let resp = await fetch(url).then(r =>r.json());
+    let resp : Joke = await fetch(url).then(r =>r.json());
     console.log(resp)
 
     let date : Date  = new Date(parseInt(resp.year),parseInt(resp.month)-1,parseInt(resp.day));
