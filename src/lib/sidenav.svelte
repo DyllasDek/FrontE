@@ -8,7 +8,7 @@
     </div>
     <ul class="list-unstyled components mb-5">
         <li>
-            <a href="/"><span class="fa fa-folder-open mr-3"></span> About me</a>
+            <a href="{base}"><span class="fa fa-folder-open mr-3"></span> About me</a>
         </li>
         <li>
             <a href="{base}/edu"><span class="fa fa-mortar-board mr-3"></span>Education</a>
