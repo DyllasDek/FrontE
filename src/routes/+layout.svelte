@@ -1,6 +1,6 @@
 <script lang="ts">
-    import SideNav from '$lib/sidenav.svelte';
     import './styles.css';
+    import SideNav from '$lib/sidenav.svelte';    
   </script>
 <main>
     <div class="maincont">
