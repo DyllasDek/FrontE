@@ -6,3 +6,10 @@
             <a href="https://t.me/DyllasDek" id="tg-link"><span class="fa fa-telegram mr-2"></span> My telegram</a>    
         </div>
 </div>
+
+<style>
+    .info a {
+        text-decoration: none;
+        color: #0c3e4b;
+    }
+</style>

@@ -9,3 +9,15 @@
 <div class="main maincont">
 <slot />
 </div>
+<style>
+  
+
+/* Style page content */
+.main {
+    margin-left: 250px;
+    /* Same as the width of the sidebar */
+    /*padding: 0px 10px;*/
+}
+
+
+</style>
