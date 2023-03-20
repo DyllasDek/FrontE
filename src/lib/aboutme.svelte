@@ -8,13 +8,3 @@
     </p>
 </div>
 
-<style>
-    .info {
-    padding: 25px;
-}
-    .info h1{
-        font-size: 30px;
-        color:black;
-        text-align: center;
-    }
-</style>

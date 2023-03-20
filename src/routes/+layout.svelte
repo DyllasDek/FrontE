@@ -18,6 +18,13 @@
     /* Same as the width of the sidebar */
     /*padding: 0px 10px;*/
 }
-
+.info {
+    padding: 25px;
+}
+.info h1{
+    font-size: 30px;
+    color:black;
+    text-align: center;
+}
 
 </style>
