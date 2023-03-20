@@ -1,0 +1,42 @@
+
+.highlight_ span{
+    background-color: #a941da;
+    box-shadow: 0px 2prgb(98, 51, 226)1a393b;
+    border-radius: 10px;
+    padding: 5px;
+    color: #f5f5f5;
+}
+
+#contact {
+    /* make them column*/
+    align-items: center;
+    display: flex;
+}
+
+#comic {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+#comic img {
+    max-width: 1000px;
+    max-height: 1000px;
+    align-self: center;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+        width: 200px;
+    }
+
+    .main {
+        margin-left: 200px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}.sidenav.svelte-1ugaswi.svelte-1ugaswi{height:100%;width:250px;position:fixed;z-index:1;top:0;left:0;background-color:rgb(50, 55, 61);overflow-x:hidden;padding-top:20px}.sidenav.svelte-1ugaswi a.svelte-1ugaswi{padding:6px 8px 6px 16px;text-decoration:none;font-size:25px;color:#818181;display:block}.sidenav.svelte-1ugaswi h3.svelte-1ugaswi{color:whitesmoke}.sidenav.svelte-1ugaswi a.svelte-1ugaswi:hover{color:#f1f1f1}.main.svelte-a4sx9r{margin-left:250px}
