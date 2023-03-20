@@ -1,3 +1,7 @@
+<script lang="ts">
+    import "./info.css"
+</script>
+
 <div class="info" >
     <h1>About me</h1>
     <p>

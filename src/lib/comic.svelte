@@ -1,4 +1,5 @@
 <script lang="ts">
+  import "./info.css"
   async function fetchComicID(email: string) : Promise<string> {
     const params : URLSearchParams = new URLSearchParams();
     if (email) {

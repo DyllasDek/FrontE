@@ -1,3 +1,7 @@
+<script lang="ts">
+  import "./info.css"
+</script>
+
 <div class="info">
     <h1>Portfolio</h1>
     <div class="skill_wrapper highlight_">
