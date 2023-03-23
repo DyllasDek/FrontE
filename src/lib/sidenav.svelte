@@ -19,6 +19,9 @@
         <li>
             <a href="{base}/cont"><span class="fa fa-telegram mr-3"></span> Contact</a>
         </li>
+        <li>
+            <a href="{base}/joke"><span class="fa fa-comment mr-3"></span> Joke</a>
+        </li>
     </ul>
 </nav>
 
