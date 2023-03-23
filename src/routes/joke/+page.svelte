@@ -2,4 +2,4 @@
     import Comic from "$lib/comic.svelte";
 </script>
   
-<Comic />
+<Comic email={"a.kopeikina@innopolis.university"} />

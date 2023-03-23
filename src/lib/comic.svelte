@@ -1,17 +1,13 @@
 <script lang="ts">
   import "./info.css"
+  export let email : string = "d.korneenko@innopolis.university"
   async function fetchComicID(email: string) : Promise<string> {
     const params : URLSearchParams = new URLSearchParams();
     if (email) {
         params.append('email', email);
     }
     let url : string ='https://fwd.innopolis.app/api/hw2?' + params.toString()
-    let resp : string = await fetch(url, {
-        mode: 'cors',
-        headers: {
-          'Access-Control-Allow-Origin':'*'
-        }
-      }).then((r: Response) => r.json());
+    let resp : string = await fetch(url).then((r: Response) => r.json());
     return resp
   }
 
@@ -41,7 +37,7 @@
     img_alt = resp.alt
     title = resp.title
   }
-  let comic = requestSite("d.korneenko@innopolis.university")
+  let comic = requestSite(email)
 </script>
 
 <div class="info" id="comic">
